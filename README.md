@@ -21,6 +21,60 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
+## Installation
+
+```shell
+git clone https://github.com/yfirdaus17/mxrei_inventory.git
+```
+```shell
+composer update
+```
+```shell
+copy .env.example .env
+```
+```shell
+php artisan key:generate
+```
+
+After that, check your db, run all migrations and seed the database:
+```shell
+php artisan migrate
+```
+```shell
+php artisan db:seed
+```
+
+Or if your database is fresh and you haven't done any work yet, then it's safe to call the commands in a single line:
+```shell
+php artisan migrate:refresh --seed
+```
+
+Note that seeding the database is compulsory as it will create the necessary roles and permissions for the user CRUD provided by the project.
+
+#### Demo Super Admin Login
+*  Email: superadmin@example.com
+*  Password: 12345678
+
+#### Demo Admin Login
+*  Email: admin@example.com
+*  Password: 12345678
+
+#### Demo Manager Login
+*  Email: manager@example.com
+*  Password: 12345678
+
+#### Demo Client Login
+*  Email: client@example.com
+*  Password: 12345678
+
+#### Demo Technician Login
+*  Email: technician@example.com
+*  Password: 12345678
+
+P.S.: Password modification and user deletion is disabled in demo mode.
+
+This project comes with a user CRUD and makes the use of [Spatie Roles and Permissions](https://github.com/spatie/laravel-permission) at a very basic level in order to give restricted access to the three roles provided above. You can move forward with the same logic to achieve more complex goals.
+
 ## Learning Laravel
 
 Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
