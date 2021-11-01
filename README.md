@@ -36,7 +36,7 @@ copy .env.example .env
 php artisan key:generate
 ```
 
-After that, check your db, run all migrations and seed the database:
+After that, check your db_name in .env file, run all migrations and seed the database:
 ```shell
 php artisan migrate
 ```
